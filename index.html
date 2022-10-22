@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
+flex-container {
+  display: flex;
+}   
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
       .container {
         overflow: hidden;
         background-color: bisque;
@@ -42,7 +53,13 @@
       color: white;
     }
       
-      
+    .btn-primary{background-color:#114054;
+    }  
+
+
+    .card-deck{ position:relative
+    }
+
 
       ul {    
           list-style-type: none;
@@ -79,7 +96,9 @@
 
    <title>Home</title>
   </head>
-  <body>
+ <body>
+
+    <div class="pageContentWrapper">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container"> 
           <a class="navbar-brand" href="#">KirissinUX</a>
@@ -118,8 +137,9 @@
             </form>
           </div>
         </div>
-      </nav>
+      </nav> 
 
+      
       <a href="https://im.ge/i/1ZZzbc"><img src="https://i.im.ge/2022/10/03/1ZZzbc.Screen-Shot-2022-09-24-at-10-47-16-AM.png" alt="Screen Shot 2022-09-24 at 10.47.16 AM" style="width:20%;"></a>
 
 
@@ -128,35 +148,54 @@
       </h1>
 
 
-      <h2> ARTS FOR ALL
-      <p>
-      Art For All is a youth centered non profit organization based in New York City, I was fourtunate enough to revamp Arts-For-Alls website in 2022. </p>    
-       
-    </h2> 
-  </div>
-</div>  
-      <h2>TRAVERSE 
-       <p> Traverse is a travel app created to ease the stress of planning group trips.</p> 
-      </h2>
-      <h2>TTB.GOV
-      <p> Government websites can be really time consuming and confusing to use, TTB.Gov sure was but my design team and I did an exceptional job revamping the site to fit users needs.</p>
-    </h2>
+                      
       
+                         <div class="container-fluid">
+                          <div class="row">
+                            <div class="w3-green w3-hover-shadow w3-center"></div> 
+                            <div class="cardContainer col-md-4"> 
+                              <div class="card-deck"></div> 
+                              <div class="card">
+                                <img src="ArtsForAll.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Arts For All</h5>
+                                  <p class="card-text">Arts For All is a youth centered non profit organization based in New York City, I was fourtunate enough to revamp Arts-For-Alls website in 2022.</p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="cardContainer col-md-4">
+                              <div class="card">
+                                <img src="./img/images/Traverse.png" class="card-img-top" alt="travel">
+                                <div class="card-body">
+                                  <h5 class="card-title">Traverse</h5>
+                                  <p class="card-text">Traverse is a travel app created to ease the stress of planning group trips.</p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div> 
+                              </div>
+                            </div>
+                            <div class="cardContainer col-md-4">
+                              <div class="card">
+                                <img src="./img/images/Government.png" class="card-img-top" alt="...">
+                                <div class="card-body"> 
+                                  <h5 class="card-title">TTB.gov</h5>
+                                  <p class="card-text">Government websites can be really time consuming and confusing to use, TTB.Gov sure was but my design team and I did an exceptional job revamping the site to fit users needs.</p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div> 
+                              </div> 
+                            </div> 
 
-
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </footer>
-    
-    <div class="preloader">
-      <img src="https://i.imgur.com/JEoeIql.png">
-    </div>
-    
+ .                         <h6> Need More Information 
+                           </h6>
+                           <a href="#" class="btn btn-primary" width="14">Contact</a>
+                            
+                           <h6>Kirissa Orosco</h6> 
+                           <p>Thanks For Scrolling</p>
+                           </div> 
+                        </div> 
+                                 
+                            
+          
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/template.js"></script>
     <script src="js/index.js"></script>
@@ -168,3 +207,5 @@
   
   </body>
 </html>   
+  
+
