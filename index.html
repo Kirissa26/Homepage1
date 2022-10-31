@@ -3,29 +3,77 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM132P8MQZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-SM132P8MQZ');
+    </script>
 
     <style>
-flex-container {
+    * {
+      box-sizing: border-box; 
+    }
+    
+    .row::after { 
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    } 
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+    
+    .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 15px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .menu li:hover {
+      background-color: #0099cc;
+    }
+    
+    .aside {
+      background-color: #33b5e5;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+  
+
+    flex-container {
   display: flex;
 }   
 
 .flex-container > div {
-  background-color: #f1f1f1;
+  background-color: #efbdbd;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
@@ -33,7 +81,7 @@ flex-container {
 
       .container {
         overflow: hidden;
-        background-color: bisque;
+        background-color: transparent;
       }
 
       .container a {
@@ -45,20 +93,28 @@ flex-container {
         font-size: 17px;
       }
         .container a:hover {
-          background-color: bisque;
+          background-color: rgb(239, 136, 9);
           color: black;
 
         }
-      .container a.active {background-color: antiquewhite;
-      color: white;
-    }
-      
-    .btn-primary{background-color:#114054;
+      .container a.active {background-color: white;
+        
+    
     }  
 
-
-    .card-deck{ position:relative
+    a:visited {color: black;
+    
     }
+      a:hover{
+        color: orange;
+      }
+      
+    .btn-primary{background-color:#114054;
+                 
+    }  
+   
+    .card-deck{ position:relative 
+    } 
 
 
       ul {    
@@ -89,15 +145,76 @@ flex-container {
           margin-right:auto;
           }    
 
-          
-          
 
-  </style>
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    </style>
+    </head>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+    <div style="margin-left: 38%; width: 25%;">
+   </div>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+      <div style="margin-left: 38%; width: 25%;">
+          <hr style="color: #1B3280; border-width: thin; width: 98%;" />
+      </div>
+      <div>
+          <asp:Label ID="Label" runat="server" CssClass="rights" Font-Size="12px" Font-Names="Calibri"
+              Text="All rights reserved."></asp:Label> </div>
+
 
    <title>Home</title>
   </head>
  <body>
-
     <div class="pageContentWrapper">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container"> 
@@ -108,33 +225,26 @@ flex-container {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+
               </li>
-              <li class="nav-item">
+              <li class="nav-item"> 
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-
-              
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">ArtsForAll</a></li>
-                  <li><hr class="dropdown-divider"></li> 
-                  <li><a class="dropdown-item" href="#">Traverse</a></li>
-                  <li><hr class="dropdown-divider"></li> 
-                  <li><a class="dropdown-item" href="#">TTB.gov</a></li>
-                </ul>
-              </li>
               <li class="nav-item">
-                <a class="nav-link  href="#">Contact</a> 
+                <a class="nav-link" href="#">
+                 Projects
+                </a>
+      
               </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <li class="nav-item">   
+                <a class="nav-link" href="#">Contact</a> 
+              </li>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> 
+              </form>
+            </ul> 
           </div>
         </div>
       </nav> 
@@ -142,31 +252,32 @@ flex-container {
       
       <a href="https://im.ge/i/1ZZzbc"><img src="https://i.im.ge/2022/10/03/1ZZzbc.Screen-Shot-2022-09-24-at-10-47-16-AM.png" alt="Screen Shot 2022-09-24 at 10.47.16 AM" style="width:20%;"></a>
 
+     <div class="hero-image">
+         <img src="./img/images/Hero.png"width="900" height="600"/> 
+     </div>
+    </div>
+</section>
 
-      <h1>
-          <a href="https://im.ge/i/1ZVjP8"><img src="https://i.im.ge/2022/10/03/1ZVjP8.Screen-Shot-2022-10-02-at-10-59-23-PM.png" alt="Screen Shot 2022-10-02 at 10.59.23 PM" style="width:60%;"></a>
-      </h1>
-
-
-                      
-      
-                         <div class="container-fluid">
+    <h1 class="sectionTitle">
+        <span class="subheading"> Projects </span>
+         </h1>  
+                     <div class="container-fluid">
                           <div class="row">
                             <div class="w3-green w3-hover-shadow w3-center"></div> 
                             <div class="cardContainer col-md-4"> 
                               <div class="card-deck"></div> 
                               <div class="card">
-                                <img src="ArtsForAll.png" class="card-img-top" alt="...">
+                                <img src="./img/images/ArtsForAllpaint.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">Arts For All</h5>
-                                  <p class="card-text">Arts For All is a youth centered non profit organization based in New York City, I was fourtunate enough to revamp Arts-For-Alls website in 2022.</p>
+                                  <p class="card-text">Arts For All is a youth centered non profit organization based in New York City, I was fourtunate enough to revamp Arts-For-All website in 2022.</p>
                                   <a href="#" class="btn btn-primary">View Project</a>
                                 </div>
                               </div> 
                             </div>
                             <div class="cardContainer col-md-4">
                               <div class="card">
-                                <img src="./img/images/Traverse.png" class="card-img-top" alt="travel">
+                                <img src="./img/images/Travel2.png" class="card-img-top" alt="travel">
                                 <div class="card-body">
                                   <h5 class="card-title">Traverse</h5>
                                   <p class="card-text">Traverse is a travel app created to ease the stress of planning group trips.</p>
@@ -176,7 +287,7 @@ flex-container {
                             </div>
                             <div class="cardContainer col-md-4">
                               <div class="card">
-                                <img src="./img/images/Government.png" class="card-img-top" alt="...">
+                                <img src="./img/images/TTB.gov2.png" class="card-img-top" alt="...">
                                 <div class="card-body"> 
                                   <h5 class="card-title">TTB.gov</h5>
                                   <p class="card-text">Government websites can be really time consuming and confusing to use, TTB.Gov sure was but my design team and I did an exceptional job revamping the site to fit users needs.</p>
@@ -185,27 +296,97 @@ flex-container {
                               </div> 
                             </div> 
 
- .                         <h6> Need More Information 
-                           </h6>
-                           <a href="#" class="btn btn-primary" width="14">Contact</a>
+                            <section1> <img src="./img/images/colorcircleux.png" class="card-img-top" width="10" height="5"alt="..."></section1>
                             
+                            <section class="resume"></section>
+
+
+                          <h2>
+                          <section class="contact-form pt-8 pt-xxl-15 pb-xxl-15 pb-0">
+                            <div class="contact-form-shape-wrapper position-absolute text-align-left w-100 h-100" >
+                              <div class="shape-1">
+                              </div>
+                              <div class="shape-2">
+                              </div> 
+                              <div class="shape-3">
+                              </div>
+                              <div class="shape-4"> 
+                              </div>
+                              <div class="shape-5"> 
+                              </div>
+                            </div>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-lg-8">
+                                  <form class="row justify-content-center">
+                                    <h3>Have a Question? <br> You can send me a message here.  <img src="./img/images/Arrow.png"width="60" height="50"/> 
+                                       </h3>
+                                    <div class="col-md-12 col-lg-6">
+                                      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name "> 
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-md-12 col-lg-12"> 
+                                      <input type="text" class="form-control" id="goal" placeholder="Company or Organization">
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                      <select class="form-select" aria-label="Default select example"> 
+                                        <option selected>What Can I Help You With?</option>
+                                        <option value="1">UX Research</option>
+                                        <option value="2">Product Design</option>
+                                        <option value="3">Web Design</option>
+                                        <option value="4">Mobile App</option>
+                                        <option value="5">Other</option>
+                                      </select> 
+                                    </div>
+                              
+                                    <div class="col-12">
+                                      <textarea class="form-control" id="floatingTextarea2" placeholder="Any Message" rows="8"
+                                        spellcheck="false"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary btn-lg mt-7 ">
+                                        <span class=" position-relative">
+                                          Send message
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round" />
+                                          </svg></span>
+                          
+                                      </button>
+                                    </div>
+                                  </form>  
+                                </div>
+                               </div>     
+                        </section> 
+                      </h2>
+                        
                            <h6>Kirissa Orosco</h6> 
-                           <p>Thanks For Scrolling</p>
+                           
+                           <a class="fa-icon fa-icon-2x" href="https:facebook.com/" title>Facebook</a>
+                           <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title>Linkedin</a>
+                           <a class="fa-icon fa-icon2x"  href="https://www.medium.com/" title>Medium</a> 
+
+                          <p> <a href="https://im.ge/i/1ZZzbc"><img src="https://i.im.ge/2022/10/03/1ZZzbc.Screen-Shot-2022-09-24-at-10-47-16-AM.png" alt="Screen Shot 2022-09-24 at 10.47.16 AM" style="width:10%;"></a> 
+                          </p> 
                            </div> 
                         </div> 
                                  
-                            
-          
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/template.js"></script>
     <script src="js/index.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 
+		<!-- Scripts  --> 
+    <section class="section-4 has-text-centered container"> 
+      <a href="#" class="btn btn-primary" width=30px; >Next</a>
+    </section>
+    
+		<script src="controller.js"></script>	 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  
-  </body>
+  </body> 
 </html>   
   
-
